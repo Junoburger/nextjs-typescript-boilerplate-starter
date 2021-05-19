@@ -1,1 +1,1 @@
-# Nextje starter app
+# Nextjs starter app
