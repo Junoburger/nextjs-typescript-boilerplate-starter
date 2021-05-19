@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { useEffect } from 'react';
 // import Image from 'next/image';
 import styled from 'styled-components';
 
@@ -8,6 +9,9 @@ import styles from '../styles/Home.module.css';
 
 
 export default function Home(): JSX.Element {
+  useEffect(() => {
+    console.log("testing husky")
+  }, [])
   return (
     <div className={styles.container}>
       <Head>
@@ -17,7 +21,7 @@ export default function Home(): JSX.Element {
       </Head>
       <BaseLayout>
         <main className={styles.main}>
-          Build something cool
+          Build something cool.
         </main>
       </BaseLayout>
 
