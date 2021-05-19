@@ -1,14 +1,4 @@
 {
-    "name": "codedepot",
-    "version": "1.0.0",
-    "private": true,
-    "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "start": "next start",
-        "lint": "eslint --fix . --ignore-path ./.gitignore",
-        "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
-    },
     "husky": {
         "hooks": {
             "pre-commit": "lint-staged"
@@ -18,6 +8,16 @@
         "./**/*.{js,jsx,ts,tsx}": [
             "eslint --fix"
         ]
+    },
+    "name": "codedepot",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "eslint --fix . --ignore-path ./.gitignore",
+        "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
     },
     "dependencies": {
         "next": "10.2.0",
