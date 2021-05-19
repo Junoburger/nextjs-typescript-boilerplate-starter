@@ -2,16 +2,6 @@
     "name": "nextje-startings-grounds",
     "version": "1.0.0",
     "private": true,
-    "husky": {
-        "hooks": {
-            "pre-commit": "npm run lint && npm run format && git add -A ."
-        }
-    },
-    "lint-staged": {
-        "*.{ts,tsx}": [
-            "npm run lint && npm run format && git add -A ."
-        ]
-    },
     "scripts": {
         "dev": "next dev",
         "build": "next build",
@@ -41,5 +31,15 @@
         "lint-staged": "^11.0.0",
         "prettier": "^2.3.0",
         "typescript": "^4.2.4"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,jsx}": [
+            "eslint '*/**/*.{ts,tsx}' --fix"
+        ]
     }
 }
