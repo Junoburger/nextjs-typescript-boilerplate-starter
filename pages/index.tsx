@@ -17,7 +17,7 @@ export default function Home(): JSX.Element {
       </Head>
       <BaseLayout>
         <main className={styles.main}>
-
+          Build something cool
         </main>
       </BaseLayout>
 
