@@ -11,7 +11,7 @@ export default function Home(): JSX.Element {
   return (
     <div className={styles.container}>
       <Head>
-        <title></title>
+        <title>Starting grounds</title>
         <meta name="description" content="Generated" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
