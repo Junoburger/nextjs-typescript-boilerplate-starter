@@ -1,4 +1,7 @@
 {
+    "name": "nextje-startings-grounds",
+    "version": "1.0.0",
+    "private": true,
     "husky": {
         "hooks": {
             "pre-commit": "lint-staged"
@@ -6,12 +9,9 @@
     },
     "lint-staged": {
         "./**/*.{js,jsx,ts,tsx}": [
-            "eslint --fix"
+            "eslint --fix && prettier --write . && git add -A ."
         ]
     },
-    "name": "codedepot",
-    "version": "1.0.0",
-    "private": true,
     "scripts": {
         "dev": "next dev",
         "build": "next build",
