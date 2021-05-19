@@ -8,8 +8,8 @@
         }
     },
     "lint-staged": {
-        "./**/*.{js,jsx,ts,tsx}": [
-            "eslint --fix && prettier --write . && git add -A ."
+        "*.{js,jsx,ts,tsx}": [
+            "npm run lint && npm run format && git add -A ."
         ]
     },
     "scripts": {
